@@ -1,0 +1,29 @@
+## Authentication
+
+### register [POST /register]
+
+Authenticate with user & password
+
++ Request (application/json)
+
+    + Attributes (object)
+	+ email: `fulana.de.tal@example.com` (string)
+        + name: `Fulana de Tal` (string)
+        + password: `i:heart:pastries` (string)
+
++ Response 201 (application/json)
+
+
+### authenticate [POST /authenticate]
+
+Authenticate with user & password
+
++ Request (application/json)
+
+    + Attributes (object)
+	+ email: `fulana.de.tal@example.com` (string)
+        + password: `i:heart:pastries` (string)
+
++ Response 200 (application/json)
+
++ Response 401 (application/json)
